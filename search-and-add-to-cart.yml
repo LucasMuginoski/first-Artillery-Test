@@ -15,6 +15,10 @@ config:
     path: "keywords.csv"
     fields:
       - "keyword"
+  ensure:
+    p98: 200
+    maxErrorRate: 2
+    max: 500
 
 scenarios:
   - name: "Search and buy"
